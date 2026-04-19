@@ -180,5 +180,4 @@ openclaw-agents/
 
 ## Credits
 
-Built by [NagarajuAI](https://youtube.com/@NagarajuAI) · April 2026  
-Inspired by [Vivi Mengjie Xiao's](https://www.businessinsider.com) viral AI employees story
+Built by [NagarajuAI](https://youtube.com/@NagarajuAI) · April 2026
