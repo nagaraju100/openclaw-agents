@@ -9,7 +9,7 @@
   "gateway": {
     "auth": {
       "mode": "token",
-      "token": "news-secure-token-003"
+      "token": "YOUR_NEWS_GATEWAY_TOKEN"
     },
     "controlUi": {
       "allowedOrigins": [

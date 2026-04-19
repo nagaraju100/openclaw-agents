@@ -9,7 +9,7 @@
   "gateway": {
     "auth": {
       "mode": "token",
-      "token": "finance-secure-token-002"
+      "token": "YOUR_FINANCE_GATEWAY_TOKEN"
     },
     "controlUi": {
       "allowedOrigins": [

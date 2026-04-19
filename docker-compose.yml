@@ -11,7 +11,7 @@ services:
       - ./agents/scheduler/data:/app/data
       - ./agents/scheduler/.openclaw:/home/node/.openclaw
     environment:
-      - OPENCLAW_GATEWAY_TOKEN=scheduler-secure-token-001
+      - OPENCLAW_GATEWAY_TOKEN=${SCHEDULER_GATEWAY_TOKEN}
 
   agent-finance:
     image: ghcr.io/openclaw/openclaw:latest
@@ -24,7 +24,7 @@ services:
       - ./agents/finance/data:/app/data
       - ./agents/finance/.openclaw:/home/node/.openclaw
     environment:
-      - OPENCLAW_GATEWAY_TOKEN=finance-secure-token-002
+      - OPENCLAW_GATEWAY_TOKEN=${FINANCE_GATEWAY_TOKEN}
 
   agent-news:
     image: ghcr.io/openclaw/openclaw:latest
@@ -37,4 +37,4 @@ services:
       - ./agents/news/data:/app/data
       - ./agents/news/.openclaw:/home/node/.openclaw
     environment:
-      - OPENCLAW_GATEWAY_TOKEN=news-secure-token-003
+      - OPENCLAW_GATEWAY_TOKEN=${NEWS_GATEWAY_TOKEN}

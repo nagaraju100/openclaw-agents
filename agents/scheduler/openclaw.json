@@ -9,7 +9,7 @@
   "gateway": {
     "auth": {
       "mode": "token",
-      "token": "scheduler-secure-token-001"
+      "token": "YOUR_SCHEDULER_GATEWAY_TOKEN"
     },
     "controlUi": {
       "allowedOrigins": [
