@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(docker --version)",
+      "Bash(docker pull *)",
+      "Bash(docker-compose up *)",
+      "Bash(openclaw --version)",
+      "Bash(openclaw agents *)",
+      "Bash(docker restart *)",
+      "Bash(curl -v http://localhost:18801)",
+      "Bash(curl -sk https://localhost:18801)",
+      "Bash(curl -s http://localhost:18801/health)",
+      "Bash(docker exec *)",
+      "Bash(awk 'NR>1 {printf \"%d\\\\n\", \"0x\" substr\\($2, index\\($2,\":\"\\)+1, 4\\)}')",
+      "Bash(cp ~/.openclaw/agents/main/agent/auth-profiles.json /Users/nagaraju/Documents/nagaraju/openclaw_agents/auth-profiles.json)",
+      "Bash(cp ~/.openclaw/agents/main/agent/models.json /Users/nagaraju/Documents/nagaraju/openclaw_agents/models.json)",
+      "Bash(docker-compose down *)",
+      "Bash(curl -s http://localhost:18800)",
+      "Bash(python3 -c ' *)",
+      "Bash(gh auth *)",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  }
+}

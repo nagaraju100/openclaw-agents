@@ -1,0 +1,36 @@
+{
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "opencode-go/glm-5"
+      }
+    }
+  },
+  "gateway": {
+    "auth": {
+      "mode": "token",
+      "token": "finance-secure-token-002"
+    },
+    "controlUi": {
+      "allowedOrigins": [
+        "http://localhost:18789",
+        "http://127.0.0.1:18789",
+        "http://localhost:18801",
+        "http://127.0.0.1:18801"
+      ]
+    }
+  },
+  "plugins": {
+    "entries": {
+      "opencode-go": {
+        "enabled": true
+      }
+    }
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "botToken": "8639841329:AAGbUKROe6YREE3N6yONwnAwfR929cB-cog"
+    }
+  }
+}

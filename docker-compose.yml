@@ -1,0 +1,40 @@
+services:
+
+  agent-scheduler:
+    image: ghcr.io/openclaw/openclaw:latest
+    container_name: openclaw-scheduler
+    restart: unless-stopped
+    ports:
+      - '18800:18789'
+    volumes:
+      - ./agents/scheduler/SOUL.md:/app/SOUL.md
+      - ./agents/scheduler/data:/app/data
+      - ./agents/scheduler/.openclaw:/home/node/.openclaw
+    environment:
+      - OPENCLAW_GATEWAY_TOKEN=scheduler-secure-token-001
+
+  agent-finance:
+    image: ghcr.io/openclaw/openclaw:latest
+    container_name: openclaw-finance
+    restart: unless-stopped
+    ports:
+      - '18801:18789'
+    volumes:
+      - ./agents/finance/SOUL.md:/app/SOUL.md
+      - ./agents/finance/data:/app/data
+      - ./agents/finance/.openclaw:/home/node/.openclaw
+    environment:
+      - OPENCLAW_GATEWAY_TOKEN=finance-secure-token-002
+
+  agent-news:
+    image: ghcr.io/openclaw/openclaw:latest
+    container_name: openclaw-news
+    restart: unless-stopped
+    ports:
+      - '18802:18789'
+    volumes:
+      - ./agents/news/SOUL.md:/app/SOUL.md
+      - ./agents/news/data:/app/data
+      - ./agents/news/.openclaw:/home/node/.openclaw
+    environment:
+      - OPENCLAW_GATEWAY_TOKEN=news-secure-token-003
