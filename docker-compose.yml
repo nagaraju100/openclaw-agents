@@ -7,7 +7,6 @@ services:
     ports:
       - '18800:18789'
     volumes:
-      - ./agents/scheduler/SOUL.md:/app/SOUL.md
       - ./agents/scheduler/data:/app/data
       - ./agents/scheduler/.openclaw:/home/node/.openclaw
     environment:
@@ -20,7 +19,6 @@ services:
     ports:
       - '18801:18789'
     volumes:
-      - ./agents/finance/SOUL.md:/app/SOUL.md
       - ./agents/finance/data:/app/data
       - ./agents/finance/.openclaw:/home/node/.openclaw
     environment:
@@ -33,7 +31,6 @@ services:
     ports:
       - '18802:18789'
     volumes:
-      - ./agents/news/SOUL.md:/app/SOUL.md
       - ./agents/news/data:/app/data
       - ./agents/news/.openclaw:/home/node/.openclaw
     environment:
